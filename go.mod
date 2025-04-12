@@ -21,8 +21,8 @@ require (
 	github.com/txn2/txeh v1.5.5
 	go.uber.org/automaxprocs v1.6.0
 	golang.org/x/crypto v0.36.0
-	golang.org/x/net v0.34.0 // indirect
-	golang.org/x/oauth2 v0.24.0
+	golang.org/x/net v0.37.0 // indirect
+	golang.org/x/oauth2 v0.28.0
 	golang.org/x/sys v0.31.0 // indirect
 	golang.org/x/text v0.23.0 // indirect
 	golang.zx2c4.com/wireguard/wgctrl v0.0.0-20221104135756-97bc4ad4a1cb
@@ -36,7 +36,7 @@ require (
 )
 
 require (
-	github.com/coreos/go-oidc/v3 v3.9.0
+	github.com/coreos/go-oidc/v3 v3.14.1
 	github.com/gorilla/websocket v1.5.3
 	golang.org/x/exp v0.0.0-20230522175609-2e198f4a06a1
 )
@@ -48,12 +48,15 @@ require (
 	github.com/olekukonko/tablewriter v0.0.5
 	github.com/spf13/cobra v1.8.1
 	gopkg.in/mail.v2 v2.3.1
+	gorm.io/driver/postgres v1.5.11
+	gorm.io/driver/sqlite v1.5.7
+	gorm.io/gorm v1.25.12
 )
 
 require (
 	cloud.google.com/go/compute/metadata v0.3.0 // indirect
 	github.com/gabriel-vasile/mimetype v1.4.8 // indirect
-	github.com/go-jose/go-jose/v3 v3.0.3 // indirect
+	github.com/go-jose/go-jose/v4 v4.0.5 // indirect
 	github.com/inconshreveable/mousetrap v1.1.0 // indirect
 	github.com/jackc/pgpassfile v1.0.0 // indirect
 	github.com/jackc/pgservicefile v0.0.0-20240606120523-5a60cdf6a761 // indirect
@@ -63,12 +66,10 @@ require (
 	github.com/jinzhu/now v1.1.5 // indirect
 	github.com/kr/text v0.2.0 // indirect
 	github.com/rivo/uniseg v0.2.0 // indirect
+	github.com/rogpeppe/go-internal v1.14.1 // indirect
 	github.com/seancfoley/bintree v1.3.1 // indirect
 	github.com/spf13/pflag v1.0.5 // indirect
 	gopkg.in/alexcesaro/quotedprintable.v3 v3.0.0-20150716171945-2caba252f4dc // indirect
-	gorm.io/driver/postgres v1.5.11 // indirect
-	gorm.io/driver/sqlite v1.5.7 // indirect
-	gorm.io/gorm v1.25.12 // indirect
 )
 
 require (
