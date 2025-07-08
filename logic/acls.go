@@ -294,7 +294,7 @@ var MigrateToGws = func() {
 		return
 	}
 	for _, node := range nodes {
-		if node.IsIngressGateway || node.IsRelay {
+		if node.IsIngressGateway || node.IsRelay || node.IsInternetGateway {
 			node.IsGw = true
 			node.IsIngressGateway = true
 			node.IsRelay = true
@@ -657,12 +657,12 @@ var IsAclPolicyValid = func(acl models.Acl) (err error) {
 
 var IsPeerAllowed = func(node, peer models.Node, checkDefaultPolicy bool) bool {
 	var nodeId, peerId string
-	if node.IsGw && peer.IsRelayed && peer.RelayedBy == node.ID.String() {
-		return true
-	}
-	if peer.IsGw && node.IsRelayed && node.RelayedBy == peer.ID.String() {
-		return true
-	}
+	// if node.IsGw && peer.IsRelayed && peer.RelayedBy == node.ID.String() {
+	// 	return true
+	// }
+	// if peer.IsGw && node.IsRelayed && node.RelayedBy == peer.ID.String() {
+	// 	return true
+	// }
 	if node.IsStatic {
 		nodeId = node.StaticNode.ClientID
 		node = node.StaticNode.ConvertToStaticNode()
